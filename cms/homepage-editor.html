@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage bewerken — Pop it in CMS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="cms.css">
+</head>
+
+<body class="cms-body" data-lang="nl">
+<div class="cms-topbar">
+  <a class="back" href="index.html">← Dashboard</a>
+  <span class="crumbs"><a href="index.html#paginas" style="color:var(--sky)">Pagina's</a> / <b>Home</b></span>
+  <span class="spacer"></span>
+  <span class="cms-status"><span class="dot"></span>Gepubliceerd · laatst bewerkt vandaag 11:06</span>
+  <div class="cms-lang" role="group" aria-label="Bewerktaal">
+    <button data-editlang="nl" aria-pressed="true">NL</button>
+    <button data-editlang="en" aria-pressed="false">EN</button>
+  </div>
+  <button class="cms-save" id="saveBtn">Opslaan</button>
+</div>
+<div class="cms-note edit-note"><span class="tag">Editor</span><span>Je kijkt naar de pagina <b>precies zoals bezoekers hem zien</b>. Klik op tekst om te typen, selecteer tekst voor opmaak, beweeg over een foto om te vervangen. Wissel rechtsboven van taal om de Engelse versie te bewerken.</span></div>
+
+<main id="pageCanvas">
+<div class="hero" data-sec="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="block hero-blue reveal vis">
+        <span class="overline"><span class="l-nl">Compacte, mobiele statiegeldinname</span><span class="l-en">Compact, mobile reverse vending</span></span>
+        <h1><span class="l-nl">Statiegeld&shy;inname die overal past.</span><span class="l-en">Reverse vending that fits anywhere.</span></h1>
+        <p><span class="l-nl">Flessen en blikjes erin, statiegeld eruit — op de plek waar mensen tóch al zijn. Zo makkelijk dat inleveren gewoon een gewoonte wordt.</span><span class="l-en">Bottles and cans in, deposits out — right where people already are. So easy that returning simply becomes a habit.</span></p>
+        <div class="hero-ctas">
+          <a href="producten.html" class="btn btn-white"><span class="l-nl">Bekijk de machines</span><span class="l-en">See the machines</span></a>
+          <a href="contact.html" class="btn btn-ghost"><span class="l-nl">Neem contact op</span><span class="l-en">Talk to us</span></a>
+        </div>
+      </div>
+      <div class="block hero-photo reveal vis">
+        <img src="../assets/situ.webp" alt="Een klant levert een fles in bij de Pop it in machine voor de supermarkt" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 30%">
+      </div>
+      <div class="block hero-green reveal vis">
+        <span class="n">±1000</span>
+        <span class="t"><span class="l-nl">verpakkingen per acculading</span><span class="l-en">containers on one battery charge</span></span>
+        <span class="s"><span class="l-nl">geperst ter plekke, op nog geen halve vierkante meter</span><span class="l-en">compacted on the spot, on less than half a square metre</span></span>
+      </div>
+    </div>
+    <div class="facts reveal vis">
+      <div class="fact"><div class="n">8<span style="font-size:.6em">/min</span></div><div class="t"><span class="l-nl">verpakkingen per minuut</span><span class="l-en">containers per minute</span></div></div>
+      <div class="fact"><div class="n">0,36 m²</div><div class="t"><span class="l-nl">vloeroppervlak</span><span class="l-en">of floor space</span></div></div>
+      <div class="fact"><div class="n">24 <span style="font-size:.6em"><span class="l-nl">uur</span><span class="l-en">hrs</span></span></div><div class="t"><span class="l-nl">op één acculading</span><span class="l-en">on one charge</span></div></div>
+      <div class="fact"><div class="n">2</div><div class="t"><span class="l-nl">modellen, één platform</span><span class="l-en">models, one platform</span></div></div>
+    </div>
+  </div>
+</div>
+
+<section data-sec="meet">
+  <div class="wrap meet-grid">
+    <div class="meet-photo reveal vis">
+      <img src="../assets/machine-crop.webp" alt="Close-up van de Pop it in machine met ronde inworpopening">
+      <div class="badge"><span class="dot"></span><span class="l-nl">Live in pilot · Nederland</span><span class="l-en">Live in pilot · Netherlands</span></div>
+    </div>
+    <div class="meet-copy reveal vis">
+      <span class="overline"><span class="l-nl">Maak kennis</span><span class="l-en">Meet the machine</span></span>
+      <h2><span class="l-nl">Eén klein apparaat. De hele innameketen.</span><span class="l-en">One small machine. The whole return chain.</span></h2>
+      <p><span class="l-nl">Pop it in herkent elke fles en elk blikje, perst het ter plekke compact en betaalt het statiegeld direct uit. Geen grote inbouwmachine, geen verbouwing — neerzetten en aanzetten.</span><span class="l-en">Pop it in recognises every bottle and can, compacts it on the spot and pays out the deposit instantly. No bulky built-in machine, no renovation — place it and switch it on.</span></p>
+      <ul class="meet-points">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <div><b><span class="l-nl">Herkent alles wat erin gaat</span><span class="l-en">Recognises everything that goes in</span></b><span><span class="l-nl">360°-scanning leest elke barcode, hoe de verpakking er ook in gaat.</span><span class="l-en">360° scanning reads every barcode, whichever way the container goes in.</span></span></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="M8 10l4 4 4-4"/><path d="M5 20h14"/></svg></span>
+          <div><b><span class="l-nl">Perst ter plekke</span><span class="l-en">Compacts on the spot</span></b><span><span class="l-nl">Daardoor passen er honderden verpakkingen in — en hoeft er veel minder vaak geleegd en gereden te worden.</span><span class="l-en">So hundreds of containers fit inside — and it needs far fewer collection runs.</span></span></div></li>
+        <li class="gr"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8a5 5 0 0 1 9-2"/><path d="M16 3v3h-3"/><path d="M17 16a5 5 0 0 1-9 2"/><path d="M8 21v-3h3"/></svg></span>
+          <div><b><span class="l-nl">Betaalt en beloont direct</span><span class="l-en">Pays and rewards instantly</span></b><span><span class="l-nl">Statiegeld direct op je rekening of als voucher in je Apple of Google Wallet.</span><span class="l-en">Deposit straight to your account or as a voucher in Apple or Google Wallet.</span></span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band" data-sec="quote" style="padding-top:0">
+  <div class="wrap">
+    <div class="quote-card reveal vis">
+      <span class="avatar"><img src="../assets/modi.webp" alt=""></span>
+      <div>
+        <blockquote><span class="l-nl">&quot;Ik gooi 'm erin op weg naar binnen. Tegen de tijd dat ik een karretje heb, staat het statiegeld al op m'n telefoon.&quot;</span><span class="l-en">&quot;I pop it in on my way inside. By the time I've grabbed a cart, the deposit is already on my phone.&quot;</span></blockquote>
+        <div class="who"><span class="l-nl">Zomaar een klant, op een dinsdag — bij de pilot in Nederland</span><span class="l-en">Just a customer, on a Tuesday — at the pilot in the Netherlands</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="groen" data-sec="groen" style="padding-top:0">
+  <div class="wrap">
+    <div class="green-band reveal vis">
+      <span class="overline"><span class="l-nl">De groene gedachte</span><span class="l-en">The green idea</span></span>
+      <h2><span class="l-nl">Elke fles die terugkomt, is er één die niet verloren gaat.</span><span class="l-en">Every bottle that comes back is one that isn't lost.</span></h2>
+      <p><span class="l-nl">Statiegeld werkt alleen als inleveren makkelijk is. Door de machine naar de mensen te brengen komt meer PET en blik terug de keten in, schoon en gesorteerd, klaar voor hergebruik.</span><span class="l-en">Deposit return only works when returning is easy. Bringing the machine to the people returns more PET and cans to the loop, clean and sorted, ready for reuse.</span></p>
+      <div class="green-cards">
+        <div class="gcard"><div class="n">800+</div><div class="t"><span class="l-nl">blikjes in één machine</span><span class="l-en">cans in one machine</span></div><p><span class="l-nl">Compact geperst, dus minder ritten om te legen.</span><span class="l-en">Compacted small, so fewer collection trips.</span></p></div>
+        <div class="gcard"><div class="n">PET + blik</div><div class="t"><span class="l-nl">gescheiden aan de bron</span><span class="l-en">sorted at the source</span></div><p><span class="l-nl">Optionele sortering levert schone monostromen op.</span><span class="l-en">Optional sorting delivers clean mono-streams.</span></p></div>
+        <div class="gcard"><div class="n">17→27</div><div class="t"><span class="l-nl">EU-landen krijgen statiegeld</span><span class="l-en">EU countries adopting DRS</span></div><p><span class="l-nl">Pop it in is gebouwd om met die golf mee te groeien.</span><span class="l-en">Pop it in is built to grow with that wave.</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" data-sec="seg">
+  <div class="wrap seg-grid">
+    <div class="seg seg-light reveal vis">
+      <span class="overline">Retailers</span>
+      <h3><span class="l-nl">Een innamepunt dat zijn vloeroppervlak terugverdient.</span><span class="l-en">A recycling point that earns its floor space.</span></h3>
+      <p><span class="l-nl">Klanten die bij jou hun statiegeld inleveren, kopen daar ook vaker iets.</span><span class="l-en">Customers who return their deposits at your store tend to shop there too.</span></p>
+      <a href="retailers.html" class="btn btn-outline"><span class="l-nl">Ontdek voor retailers</span><span class="l-en">Explore for retailers</span></a>
+    </div>
+    <div class="seg seg-dark reveal vis">
+      <span class="overline">DRS-operators</span>
+      <h3><span class="l-nl">Landelijke uitrol zonder landelijke hoofdpijn.</span><span class="l-en">National-scale rollout without national-scale headaches.</span></h3>
+      <p><span class="l-nl">Live telemetrie, fraudecheck bij de inworp en afrekenklare data.</span><span class="l-en">Live telemetry, fraud checks at the point of return and settlement-ready data.</span></p>
+      <a href="drs-operators.html" class="btn btn-ghost-dark"><span class="l-nl">Ontdek voor DRS-operators</span><span class="l-en">Explore for DRS operators</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;padding-bottom:0" data-sec="cta">
+  <div class="wrap">
+    <div class="cta-band reveal vis">
+      <div>
+        <h2><span class="l-nl">Nieuwsgierig hoe hij in jouw winkel staat?</span><span class="l-en">Curious what it looks like in your store?</span></h2>
+        <p><span class="l-nl">Vertel ons over je locatie of markt — we nemen contact op met vervolgstappen.</span><span class="l-en">Tell us about your location or market — we'll get back with next steps.</span></p>
+      </div>
+      <a href="contact.html" class="btn btn-white"><span class="l-nl">Neem contact op</span><span class="l-en">Get in touch</span></a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<div class="wys" id="wysBar">
+  <button data-cmd="bold" title="Vet"><b>B</b></button>
+  <button data-cmd="italic" title="Cursief"><i>I</i></button>
+  <button data-cmd="underline" title="Onderstrepen"><u>U</u></button>
+  <span class="sep"></span>
+  <button data-cmd="insertUnorderedList" title="Lijst">≡</button>
+  <button data-cmd="createLink" title="Link">🔗</button>
+</div>
+<div class="cms-toast" id="cmsToast"><span class="dot"></span><span></span></div>
+<script src="cms.js"></script>
+</body>
+</html>

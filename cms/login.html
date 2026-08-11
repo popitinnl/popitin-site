@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inloggen — Pop it in CMS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="cms.css">
+</head>
+
+<body class="cms-body">
+<div class="login-wrap">
+  <div class="login-visual">
+    <img class="logo-img" src="../assets/logo-mark-dark.svg" alt="Pop it in" style="height:34px;width:auto;align-self:flex-start">
+    <div class="quote">Eén plek om je site, je pagina's en je twee talen te beheren.</div>
+    <div class="ph"><img src="../assets/machine-crop.webp" alt="" style="display:block;width:100%"></div>
+  </div>
+  <div class="login-form">
+    <div class="login-card">
+      <img class="logo-img" src="../assets/logo-full.svg" alt="Pop it in">
+      <h1>Welkom terug</h1>
+      <p class="sub">Log in om popitin.net te beheren.</p>
+      <form onsubmit="event.preventDefault(); window.location='index.html'">
+        <label for="l-mail">E-mailadres</label>
+        <input id="l-mail" type="email" placeholder="naam@popitin.net">
+        <label for="l-pass">Wachtwoord</label>
+        <input id="l-pass" type="password" placeholder="••••••••">
+        <button class="login-btn" type="submit"><span class="t">Inloggen</span><span class="a">→</span></button>
+      </form>
+      <div class="aux"><a href="#">Wachtwoord vergeten?</a><span style="color:var(--sky)">2FA verplicht</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
