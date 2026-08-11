@@ -1,0 +1,6 @@
+# Deze site is nog niet openbaar. Crawlen mag, indexeren niet:
+# dat regelt de X-Robots-Tag header en de noindex in elke pagina.
+# Bewust geen Disallow — een geblokkeerde pagina wordt niet gelezen,
+# waardoor de noindex nooit wordt gezien en de URL toch kan opduiken.
+User-agent: *
+Allow: /
