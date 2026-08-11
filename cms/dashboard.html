@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Pop it in CMS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="cms.css">
+</head>
+
+<body class="cms-body">
+<div class="cms-shell">
+<aside class="cms-side">
+  <img class="logo-img" src="../assets/logo-mark-dark.svg" alt="Pop it in CMS">
+  <a href="dashboard.html" class="on"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Dashboard</a><a href="dashboard.html#paginas"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg>Pagina's</a><a href="dashboard.html#menu-panel"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Menu</a><a href="dashboard.html#media-panel"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-5 4 4 3-3 4 4"/></svg>Media</a><a href="#" class="nodemo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>Instellingen</a>
+  <div class="bottom">
+    <a href="../index.html"><svg viewBox="0 0 24 24"><path d="M15 4h5v16h-5"/><path d="M12 8l-4 4 4 4M8 12h9"/></svg>Bekijk site</a>
+    <a href="index.html">Uitloggen — Peter</a>
+  </div>
+</aside>
+<main class="cms-main">
+  <h1>Goedemiddag, Peter 👋</h1>
+  <p class="sub">Dit is het beheer van popitin.net. Alles wat je hier aanpast, staat direct in twee talen klaar.</p>
+
+  <div class="cms-cards">
+    <div class="cms-card"><div class="n">6</div><div class="t">pagina's gepubliceerd</div></div>
+    <div class="cms-card"><div class="n">2</div><div class="t">talen — NL beheer, EN vertaling</div></div>
+    <div class="cms-card"><div class="n">12</div><div class="t">afbeeldingen in mediabibliotheek</div></div>
+    <div class="cms-card"><div class="n">98%</div><div class="t">compressie-besparing deze maand</div></div>
+  </div>
+
+  <div class="cms-panel" id="paginas">
+    <div class="head"><h2>Pagina's</h2><a class="btn-sm nodemo" href="#">+ Nieuwe pagina</a></div>
+    <table class="cms-table">
+      <thead><tr><th>Pagina</th><th>Status</th><th>Talen</th><th>Laatst bewerkt</th><th></th></tr></thead>
+      <tbody><tr>
+      <td><a href="homepage-editor.html" style="color:inherit"><b>Home</b></a><div style="color:var(--sky);font-size:.8rem">/</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:01</td>
+      <td class="row-actions"><a href="homepage-editor.html">Bewerken</a><a href="../index.html">Bekijk</a></td>
+    </tr><tr>
+      <td><a href="#" class="nodemo" style="color:inherit"><b>Producten</b></a><div style="color:var(--sky);font-size:.8rem">/producten</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:02</td>
+      <td class="row-actions"><a href="#" class="nodemo">Bewerken</a><a href="../producten.html">Bekijk</a></td>
+    </tr><tr>
+      <td><a href="#" class="nodemo" style="color:inherit"><b>Voor retailers</b></a><div style="color:var(--sky);font-size:.8rem">/retailers</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:03</td>
+      <td class="row-actions"><a href="#" class="nodemo">Bewerken</a><a href="../retailers.html">Bekijk</a></td>
+    </tr><tr>
+      <td><a href="#" class="nodemo" style="color:inherit"><b>Voor DRS-operators</b></a><div style="color:var(--sky);font-size:.8rem">/drs-operators</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:04</td>
+      <td class="row-actions"><a href="#" class="nodemo">Bewerken</a><a href="../drs-operators.html">Bekijk</a></td>
+    </tr><tr>
+      <td><a href="#" class="nodemo" style="color:inherit"><b>Over ons</b></a><div style="color:var(--sky);font-size:.8rem">/over-ons</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:05</td>
+      <td class="row-actions"><a href="#" class="nodemo">Bewerken</a><a href="../over-ons.html">Bekijk</a></td>
+    </tr><tr>
+      <td><a href="#" class="nodemo" style="color:inherit"><b>Contact</b></a><div style="color:var(--sky);font-size:.8rem">/contact</div></td>
+      <td><span class="pill-ok"><span class="dot"></span>Gepubliceerd</span></td>
+      <td><span class="lang-ok">NL ✓ &nbsp; EN ✓</span></td>
+      <td>vandaag 11:06</td>
+      <td class="row-actions"><a href="#" class="nodemo">Bewerken</a><a href="../contact.html">Bekijk</a></td>
+    </tr></tbody>
+    </table>
+  </div>
+
+  <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+    <div class="cms-panel" style="margin-bottom:0" id="menu-panel">
+      <div class="head"><h2>Menu</h2><a class="btn-sm ghost nodemo" href="#">Volgorde aanpassen</a></div>
+      <ul class="menu-list">
+        <li><span class="drag">⋮⋮</span>Producten<span class="sub">/producten</span></li>
+        <li><span class="drag">⋮⋮</span>Retailers<span class="sub">/retailers</span></li>
+        <li><span class="drag">⋮⋮</span>DRS-operators<span class="sub">/drs-operators</span></li>
+        <li><span class="drag">⋮⋮</span>Over ons<span class="sub">/over-ons</span></li>
+        <li><span class="drag">⋮⋮</span>Contact <span style="background:var(--blue);color:#fff;font-size:.68rem;font-weight:700;border-radius:5px;padding:3px 7px;margin-left:8px">knop</span><span class="sub">/contact</span></li>
+      </ul>
+    </div>
+    <div class="cms-panel" style="margin-bottom:0" id="media-panel">
+      <div class="head"><h2>Media</h2><a class="btn-sm ghost nodemo" href="#">Alles bekijken</a></div>
+      <div class="media-grid">
+        <div class="upload-tile"><span class="plus">+</span>Upload<br>auto-compressie</div>
+        <div class="media-item"><img src="../assets/situ.webp" alt=""><div class="meta">supermarkt.webp<br>3,4 MB → <b>274 KB</b></div></div>
+        <div class="media-item"><img src="../assets/machine-hero.webp" alt=""><div class="meta">nomad-tankstation.webp<br>3,3 MB → <b>53 KB</b></div></div>
+        <div class="media-item"><img src="../assets/modi.webp" alt=""><div class="meta">modi-portret.webp<br>5,4 MB → <b>88 KB</b></div></div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+<div class="cms-toast" id="cmsToast"><span class="dot"></span><span></span></div>
+<script>
+(function(){
+  var toastEl = document.getElementById('cmsToast'), tmr;
+  function toast(msg){
+    toastEl.querySelector('span:last-child').textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(tmr);
+    tmr = setTimeout(function(){ toastEl.classList.remove('show'); }, 2600);
+  }
+  document.querySelectorAll('.nodemo').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      toast('Demo: alleen de homepage-editor is uitgewerkt — klik bij Home op Bewerken');
+    });
+  });
+  document.querySelectorAll('.upload-tile,.drag').forEach(function(el){
+    el.addEventListener('click', function(){ toast('Demo: dit zit in de echte versie'); });
+  });
+})();
+</script>
+</body>
+</html>
