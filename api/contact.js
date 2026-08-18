@@ -71,8 +71,15 @@ export default async function handler(req, res) {
   const afzender = process.env.CONTACT_AFZENDER;
 
   if (!sleutel || !ontvanger || !afzender) {
-    console.error("[contact] ontbrekende instellingen in Vercel");
-    return res.status(500).json({ error: "Het formulier is nog niet ingesteld" });
+    // Tijdelijk: benoemt welke instelling ontbreekt, zodat we niet hoeven te gokken.
+    // Alleen de namen, nooit de waarden. Weghalen zodra het formulier werkt.
+    const mist = [
+      !sleutel && "RESEND_API_KEY",
+      !ontvanger && "CONTACT_ONTVANGER",
+      !afzender && "CONTACT_AFZENDER",
+    ].filter(Boolean);
+    console.error(`[contact] ontbreekt in Vercel: ${mist.join(", ")}`);
+    return res.status(500).json({ error: "Het formulier is nog niet ingesteld", mist });
   }
 
   try {
