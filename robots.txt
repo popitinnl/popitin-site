@@ -4,3 +4,5 @@
 # waardoor de noindex nooit wordt gezien en de URL toch kan opduiken.
 User-agent: *
 Allow: /
+
+Sitemap: https://popitin.nl/sitemap.xml

@@ -2,12 +2,46 @@
 <!--
   Handmatig bijgehouden: zes pagina's die zelden wijzigen, daar is geen generator
   voor nodig. Komt er een pagina bij, zet hem hier ook neer.
+
+  Geen hreflang-verwijzingen: Nederlands en Engels staan in dezelfde pagina en de
+  taalknop wisselt ze om. Er is dus maar één adres per pagina. Krijgt elke taal
+  ooit een eigen adres, dan horen die verwijzingen hier alsnog.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://popitin.nl/</loc><lastmod>2026-08-18</lastmod><priority>1.0</priority></url>
-  <url><loc>https://popitin.nl/producten/</loc><lastmod>2026-08-18</lastmod><priority>0.9</priority></url>
-  <url><loc>https://popitin.nl/retailers/</loc><lastmod>2026-08-18</lastmod><priority>0.9</priority></url>
-  <url><loc>https://popitin.nl/drs-operators/</loc><lastmod>2026-08-18</lastmod><priority>0.9</priority></url>
-  <url><loc>https://popitin.nl/over-ons/</loc><lastmod>2026-08-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://popitin.nl/contact/</loc><lastmod>2026-08-18</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://popitin.nl/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://popitin.nl/producten/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://popitin.nl/retailers/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://popitin.nl/drs-operators/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://popitin.nl/contact/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://popitin.nl/over-ons/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
