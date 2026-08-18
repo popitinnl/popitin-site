@@ -48,7 +48,9 @@
 
       var engels = document.body.getAttribute('data-lang') === 'en';
 
-      fetch('/api/contact', {
+      /* Met afsluitende slash: vercel.json staat op trailingSlash, en zonder
+         slash krijgt elke inzending eerst een omleiding voor z'n kiezen. */
+      fetch('/api/contact/', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
