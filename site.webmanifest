@@ -1,0 +1,14 @@
+{
+  "name": "Pop it in",
+  "short_name": "Pop it in",
+  "description": "Compacte reverse vending voor retailers, DRS-operators en evenementen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F8FD",
+  "theme_color": "#2468C6",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

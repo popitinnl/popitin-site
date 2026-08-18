@@ -5,6 +5,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Pop it in</title>
+<meta name="description" content="Retailer of DRS-operator? Vertel ons over je locatie en volumes, dan denken we mee over de juiste opstelling.">
+<link rel="canonical" href="https://popitin.nl/contact/">
+
+<!-- Delen op sociale media -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pop it in">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://popitin.nl/contact/">
+<meta property="og:title" content="Contact — Pop it in">
+<meta property="og:description" content="Retailer of DRS-operator? Vertel ons over je locatie en volumes, dan denken we mee over de juiste opstelling.">
+<meta property="og:image" content="https://popitin.nl/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Iconen -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2468C6">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -52,8 +75,11 @@
             <select id="f-rol"><option>Retailer</option><option>DRS-operator</option><option><span class="l-nl">Anders</span><span class="l-en">Other</span></option></select></div>
           <div class="field full"><label for="f-bericht"><span class="l-nl">Bericht</span><span class="l-en">Message</span></label><textarea id="f-bericht"></textarea></div>
         </div>
+        <input type="text" name="website" id="f-website" tabindex="-1" autocomplete="off"
+               aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none">
         <button type="submit" class="btn btn-blue" style="margin-top:22px"><span class="l-nl">Versturen</span><span class="l-en">Send</span></button>
-        <div class="form-ok" id="formOk"><span class="l-nl">Bedankt! We nemen zo snel mogelijk contact met je op. (Demo — er is nog niets verzonden.)</span><span class="l-en">Thanks! We'll get back to you as soon as possible. (Demo — nothing was actually sent.)</span></div>
+        <div class="form-ok" id="formOk"><span class="l-nl">Bedankt! We nemen zo snel mogelijk contact met je op.</span><span class="l-en">Thanks! We'll get back to you as soon as possible.</span></div>
+        <div class="form-ok" id="formFout" style="display:none;border-color:#C0392B;color:#C0392B"></div>
       </form>
     </div>
     <div class="contact-aside">
