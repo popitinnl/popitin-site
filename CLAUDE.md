@@ -6,10 +6,13 @@ slag gaat.
 
 ---
 
-## Status: de site is af
+## Status: fase 1 is af
 
 Dit is een **volwaardige statische website** die werkt en live kan. Geen prototype,
-geen halfproduct. Opgeleverd door Studio PB op 18 augustus 2026:
+geen halfproduct — maar wel de eerste fase van een groter plan; zie onderaan wat er
+nog komt.
+
+Opgeleverd door Studio PB op 18 augustus 2026:
 
 - Zes pagina's, tweetalig Nederlands en Engels
 - Contactformulier dat echt mailt, met spamvangnet
@@ -102,22 +105,47 @@ Redeploy.
 
 ---
 
-## Later, en alleen samen besloten
+## Dit is fase 1 — wat er daarna komt
 
-Er ligt een idee om de site om te bouwen naar Next.js met een CMS, zodat Bart zelf
-teksten kan aanpassen en de Engelse versie automatisch mee vertaald wordt.
+Deze statische site is de eerste fase van een groter plan, niet het eindpunt. Wat
+er ligt werkt en kan live; de volgende stappen staan hieronder zodat iedereen weet
+waar het heen gaat.
 
-**Dat is een beslissing voor Bart en Peter (Studio PB) samen, over een paar weken.**
-Kom daar niet zelf mee aanzetten en begin er niet aan. Vraagt Bart erom, verwijs dan
-naar dat overleg.
+### Fase 2 — teksten bewerkbaar
 
-Waarom het wachten kan: de site doet nu wat hij moet doen. Kleine wijzigingen gaan
-prima met de hand. Een CMS is pas nodig als Bart vaak zelf tekst wil aanpassen
-zonder tussenkomst — en dan is het ook meteen goed te bouwen, met de vertaling erbij.
+De site wordt omgebouwd naar **Next.js**, met de teksten in een CMS. Bart typt
+Nederlands, en de Engelse versie rolt eruit via een automatische vertaling
+(OpenAI-koppeling) die hij daarna nog kan bijschaven. De vormgeving blijft precies
+zoals hij nu is — die is af en goedgekeurd.
 
-Twee losse eindjes die dan meteen meegenomen kunnen worden: de vier logo-SVG's zijn
-elk ongeveer 107 kB omdat ze automatisch getraceerd zijn, en de map `cms/` is een
-maquette waarin niets bewaard wordt.
+Dat lost meteen iets op wat nu niet kan: elke taal krijgt een eigen adres, waardoor
+de Engelse versie apart vindbaar wordt en er hreflang gezet kan worden. Nu staan
+beide talen in dezelfde pagina en ziet een zoekmachine ze door elkaar.
+
+Reken op ongeveer een dag werk voor het ombouwen, en een dag voor het CMS.
+
+### Fase 3 — beelden
+
+Beelden vervangen vanuit het CMS, met automatische compressie naar WebP. Dat is wat
+het vlak in de huidige `cms/`-maquette al belooft.
+
+### Fase 4 — de rest
+
+De overige pagina's bewerkbaar maken, en de formulierinzendingen ergens terugzien in
+plaats van alleen in de mail. Dan meteen ook de twee losse eindjes meenemen: de vier
+logo-SVG's zijn elk ongeveer 107 kB omdat ze automatisch getraceerd zijn, en de map
+`cms/` is nu een maquette waarin niets bewaard wordt.
+
+### Wanneer
+
+**De beslissing om aan fase 2 te beginnen is van Bart en Peter (Studio PB) samen,
+over een paar weken.** Kom daar niet zelf mee aanzetten en begin er niet aan. Vraagt
+Bart erom, verwijs dan naar dat overleg.
+
+Waarom het wachten kan: de site doet nu wat hij moet doen, en kleine wijzigingen
+gaan prima met de hand. Een CMS is pas nodig als Bart regelmatig zelf tekst wil
+aanpassen zonder tussenkomst — en dan is het ook meteen goed te bouwen, met de
+vertaling erbij, in plaats van er half aan te beginnen.
 
 ---
 
