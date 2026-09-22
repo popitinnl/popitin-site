@@ -12,8 +12,8 @@
   var menu = document.getElementById('menu');
   var burger = document.getElementById('burger');
   if (burger){
-    var open = function(){ menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
-    var close = function(){ menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+    var open = function(){ menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); menu.inert = false; burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+    var close = function(){ menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); menu.inert = true; burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
     burger.addEventListener('click', function(){ menu.classList.contains('open') ? close() : open(); });
     document.getElementById('menuClose').addEventListener('click', close);
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
