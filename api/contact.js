@@ -8,7 +8,8 @@
  *
  * Instellen in Vercel onder Settings -> Environment Variables:
  *   RESEND_API_KEY      de sleutel van resend.com
- *   CONTACT_ONTVANGER   waar de aanvragen heen gaan
+ *   CONTACT_ONTVANGER   waar de aanvragen heen gaan. Meerdere adressen mag,
+ *                       gescheiden door komma's.
  *   CONTACT_AFZENDER    van welk adres ze komen; dat domein moet bij Resend
  *                       geverifieerd zijn, anders komt er niets aan
  */
@@ -66,16 +67,22 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Dat e-mailadres klopt niet" });
   }
 
-  const sleutel = process.env.RESEND_API_KEY;
-  const ontvanger = process.env.CONTACT_ONTVANGER;
-  const afzender = process.env.CONTACT_AFZENDER;
+  const sleutel = process.env.RESEND_API_KEY?.trim();
+  // Meerdere ontvangers mogen, gescheiden door komma's. Witruimte eromheen
+  // wordt weggehaald -- een spatie in een adres maakt het ongeldig en dat zie
+  // je pas als er een aanvraag verdwijnt.
+  const ontvangers = String(process.env.CONTACT_ONTVANGER || "")
+    .split(",")
+    .map((adres) => adres.trim())
+    .filter(Boolean);
+  const afzender = process.env.CONTACT_AFZENDER?.trim();
 
-  if (!sleutel || !ontvanger || !afzender) {
+  if (!sleutel || ontvangers.length === 0 || !afzender) {
     // Welke instelling ontbreekt staat in de serverlog, niet in het antwoord: de
     // bezoeker heeft er niets aan en het hoort niet naar buiten.
     const mist = [
       !sleutel && "RESEND_API_KEY",
-      !ontvanger && "CONTACT_ONTVANGER",
+      ontvangers.length === 0 && "CONTACT_ONTVANGER",
       !afzender && "CONTACT_AFZENDER",
     ].filter(Boolean);
     console.error(`[contact] ontbreekt in Vercel: ${mist.join(", ")}`);
@@ -91,7 +98,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: `Pop it in <${afzender}>`,
-        to: [ontvanger],
+        to: ontvangers,
         // Zo kun je vanuit je mailprogramma direct antwoorden.
         reply_to: email,
         subject: `Aanvraag via popitin.nl — ${naam}${bedrijf ? ` (${bedrijf})` : ""}`,
@@ -122,7 +129,7 @@ export default async function handler(req, res) {
       return res.status(502).json({ error: "Versturen is niet gelukt" });
     }
 
-    console.log(`[contact] verstuurd namens ${email}`);
+    console.log(`[contact] verstuurd namens ${email} naar ${ontvangers.join(", ")}`);
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error("[contact] onverwachte fout:", err);
