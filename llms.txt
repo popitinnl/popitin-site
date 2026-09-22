@@ -24,7 +24,7 @@ supermarkten, tankstations, scholen, evenementen en de openbare ruimte.
 - Telemetrie: real-time via MQTT, afrekenklaar rapportageformaat
 - Uitbetaling: retourpinnen direct op de rekening, of voucher
 
-## Pagina's
+## Pagina's (Nederlands)
 
 - [Home](https://popitin.nl/): wat de machine doet en voor wie
 - [Producten](https://popitin.nl/producten/): NOMAD en DOCK met alle specificaties
@@ -32,6 +32,17 @@ supermarkten, tankstations, scholen, evenementen en de openbare ruimte.
 - [Voor DRS-operators](https://popitin.nl/drs-operators/): uitrol, fraudepreventie, rapportage
 - [Over ons](https://popitin.nl/over-ons/): het platform en de vier modellen
 - [Contact](https://popitin.nl/contact/): locatiescan aanvragen
+
+## Pages (English)
+
+Dezelfde inhoud, elk adres een eigen pagina.
+
+- [Home](https://popitin.nl/en/)
+- [Products](https://popitin.nl/en/products/)
+- [For retailers](https://popitin.nl/en/retailers/)
+- [For DRS operators](https://popitin.nl/en/drs-operators/)
+- [About](https://popitin.nl/en/about/)
+- [Contact](https://popitin.nl/en/contact/)
 
 ## Contact
 

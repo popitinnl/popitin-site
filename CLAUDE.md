@@ -49,26 +49,47 @@ er een CMS aan te hangen. Dat is een bewuste keuze voor later — zie onderaan.
 ```
 index.html            producten.html      retailers.html
 drs-operators.html    over-ons.html       contact.html
+en/                   dezelfde zes, in het Engels
+404.html              eigen foutpagina, tweetalig
 assets/               style.css, site.js, foto's, logo's
 api/contact.js        het contactformulier
-sitemap.xml           robots.txt          vercel.json
+sitemap.xml           robots.txt          llms.txt      vercel.json
 ```
+
+De adressen zijn zonder `.html`: `/producten/`, niet `/producten.html`. Dat regelt
+`cleanUrls` in `vercel.json`; de oude adressen sturen automatisch door. Let op dat
+verwijzingen naar `assets/` **absoluut** moeten zijn (`/assets/...`), anders zoekt
+de browser vanaf `/producten/` naar `/producten/assets/`.
 
 Geen framework, geen database, geen node_modules. Vercel maakt van `api/contact.js`
 vanzelf een serverfunctie; verder zijn het gewoon bestanden.
 
-### Twee talen in dezelfde pagina
+### Twee talen, twee adressen
 
-Beide talen staan náást elkaar in de HTML:
+Sinds 22 september 2026 heeft elke taal een eigen pagina:
 
-```html
-<span class="l-nl">Naam</span><span class="l-en">Name</span>
+```
+/                  /en/
+/producten/        /en/products/
+/retailers/        /en/retailers/
+/drs-operators/    /en/drs-operators/
+/over-ons/         /en/about/
+/contact/          /en/contact/
 ```
 
-`assets/site.js` zet `data-lang` op de `<body>` en de CSS laat de juiste variant
-zien. **Wijzig je een Nederlandse zin, wijzig dan altijd de Engelse mee.** Anders
-lopen de talen uiteen en zie je dat niet, want er is maar één taal tegelijk
-zichtbaar.
+De Nederlandse pagina's staan in de hoofdmap, de Engelse in `en/`. Ze verwijzen
+met `hreflang` naar elkaar, en de taalknop rechtsboven is een gewone link naar de
+tegenhanger. Er zit geen JavaScript meer achter het wisselen van taal.
+
+**Wijzig je een Nederlandse zin, wijzig dan de Engelse mee** -- nu in het andere
+bestand. `over-ons.html` en `en/about.html` horen bij elkaar; dat is aan de slug
+niet af te lezen, dus gebruik het lijstje hierboven.
+
+Daarvoor stonden beide talen in dezelfde pagina, met `<span class="l-nl">` en
+`<span class="l-en">` naast elkaar. Dat werkte voor de bezoeker, maar een
+zoekmachine las de koppen als een aaneengeplakte brij: *"Twee machines, een
+platformTwo machines, one platform"*. De Engelse versie was daardoor niet apart
+vindbaar en hreflang kon niet.
 
 ### Werkafspraken
 
@@ -118,9 +139,9 @@ Nederlands, en de Engelse versie rolt eruit via een automatische vertaling
 (OpenAI-koppeling) die hij daarna nog kan bijschaven. De vormgeving blijft precies
 zoals hij nu is — die is af en goedgekeurd.
 
-Dat lost meteen iets op wat nu niet kan: elke taal krijgt een eigen adres, waardoor
-de Engelse versie apart vindbaar wordt en er hreflang gezet kan worden. Nu staan
-beide talen in dezelfde pagina en ziet een zoekmachine ze door elkaar.
+Aparte adressen per taal hoorden hier ook bij, maar dat is op 22 september 2026
+al losgetrokken van de rest: de Engelse pagina's staan nu in `en/` met hreflang
+ernaartoe. Dat hoeft dus niet te wachten op het CMS.
 
 Reken op ongeveer een dag werk voor het ombouwen, en een dag voor het CMS.
 

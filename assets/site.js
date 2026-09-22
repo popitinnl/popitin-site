@@ -1,14 +1,8 @@
 (function(){
-  function setLang(l){
-    document.body.setAttribute('data-lang', l);
-    document.documentElement.setAttribute('lang', l);
-    document.querySelectorAll('[data-setlang]').forEach(function(b){
-      b.setAttribute('aria-pressed', b.getAttribute('data-setlang') === l ? 'true' : 'false');
-    });
-  }
-  document.querySelectorAll('[data-setlang]').forEach(function(b){
-    b.addEventListener('click', function(){ setLang(b.getAttribute('data-setlang')); });
-  });
+  /* De taal zit sinds 22 september 2026 in het adres: /over-ons/ tegenover
+     /en/about/. De wisselaar is een gewone link geworden; er valt hier
+     niets meer om te zetten. data-lang staat vast op de body. */
+
   var menu = document.getElementById('menu');
   var burger = document.getElementById('burger');
   if (burger){

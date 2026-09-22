@@ -66,9 +66,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .nav-links a:hover{background:var(--canvas);color:var(--blue)}
 .nav-right{display:flex;align-items:center;gap:14px}
 .lang-switch{display:flex;gap:3px;background:var(--canvas);border-radius:10px;padding:3px}
-.lang-switch button{display:flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;letter-spacing:.03em;padding:8px 12px;border:none;border-radius:8px;background:transparent;color:var(--slate);transition:background .2s,color .2s}
-.lang-switch button:hover{color:var(--ink)}
-.lang-switch button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(20,38,61,.14)}
+.lang-switch a{text-decoration:none;display:flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;letter-spacing:.03em;padding:8px 12px;border:none;border-radius:8px;background:transparent;color:var(--slate);transition:background .2s,color .2s}
+.lang-switch a:hover{color:var(--ink)}
+.lang-switch a[aria-current="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(20,38,61,.14)}
 .lang-switch .flag{width:18px;height:13px;border-radius:2.5px;overflow:hidden;flex:none;display:block}
 /* logo-style CTA: two blocks, like the wordmark */
 .btn-logo{display:inline-flex;align-items:stretch;gap:3px;text-decoration:none;transition:transform .2s}
