@@ -1,0 +1,38 @@
+# Pop it in
+
+> Compacte statiegeldautomaten (reverse vending) voor retailers, DRS-operators
+> en evenementen. Eén platform van 0,4 m² dat flessen en blikjes herkent, ter
+> plekke compacteert en het statiegeld direct uitbetaalt via retourpinnen.
+
+Pop it in is ontwikkeld in Nederland en gebouwd in Europa. De machines zijn
+bedoeld voor plekken waar een traditionele inbouwautomaat niet past: kleine
+supermarkten, tankstations, scholen, evenementen en de openbare ruimte.
+
+## Modellen
+
+- NOMAD — mobiel, op accu (900 Wh, tot 24 uur) en op wielen. 68 kg. Outdoor-ready.
+- DOCK — vast, op netstroom (230 VAC), extra opslag: 1050 blikjes of 450 kleine PET-flessen. 51 kg.
+- TITAN — buiten, op inwerpzuilen van ondergrondse vuilcontainers.
+- SLIM — binnen, naast bestaande vendingautomaten.
+
+## Specificaties
+
+- Vloeroppervlak: 0,4 m² (60 cm breed x 70 cm diep, 160 cm hoog)
+- Inname: 8 verpakkingen per minuut
+- Herkenning: 360 graden scanning, 60 fps, GS1 Digital Link-verificatie
+- Compactor: octrooi aangevraagd
+- Telemetrie: real-time via MQTT, afrekenklaar rapportageformaat
+- Uitbetaling: retourpinnen direct op de rekening, of voucher
+
+## Pagina's
+
+- [Home](https://popitin.nl/): wat de machine doet en voor wie
+- [Producten](https://popitin.nl/producten/): NOMAD en DOCK met alle specificaties
+- [Voor retailers](https://popitin.nl/retailers/): vloeroppervlak, herhaalbezoek, plaatsing
+- [Voor DRS-operators](https://popitin.nl/drs-operators/): uitrol, fraudepreventie, rapportage
+- [Over ons](https://popitin.nl/over-ons/): het platform en de vier modellen
+- [Contact](https://popitin.nl/contact/): locatiescan aanvragen
+
+## Contact
+
+E-mail: info@popitin.nl
