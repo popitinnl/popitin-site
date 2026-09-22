@@ -281,6 +281,17 @@ footer p{font-size:.92rem;max-width:26em;font-weight:300}
 .tl-item .when{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .tl-item h3{margin:6px 0 6px;font-size:1.2rem}
 .tl-item p{font-size:.96rem;font-weight:300;max-width:40em}
+
+/* ---------- modellen op over ons ---------- */
+.model-grid{display:grid;gap:26px;margin-top:40px}
+@media(min-width:680px){.model-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.model-grid{grid-template-columns:repeat(4,1fr)}}
+.model-photo{border-radius:var(--r-block);overflow:hidden;aspect-ratio:1;background:var(--canvas);margin-bottom:16px}
+.model-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.model-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.model-label.green{color:var(--green-deep)}
+.model-card h3{margin:6px 0 6px;font-size:1.12rem}
+.model-card p{font-size:.94rem;font-weight:300}
 .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-block);padding:clamp(28px,4vw,48px)}
 .form-grid{display:grid;gap:20px}
 @media(min-width:720px){.form-grid{grid-template-columns:1fr 1fr}.form-grid .full{grid-column:1/-1}}
